@@ -22,7 +22,7 @@ export default function Home({ idioma, darkMode } : LanguageProps) {
         'text-center pb-5 text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-blue-500 font-extrabold text-2xl md:text-6xl' }>
         
         {idioma === 'es' ? 'Hola, soy Juan Carlos Saugar' : 
-        idioma === 'en' ? 'Hello, My name is Juan!' 
+        idioma === 'en' ? 'Hello, my name is Juan' 
         : 'Witam, jestem Juan'}
       </h1>
       <p className='pt-5'>{
