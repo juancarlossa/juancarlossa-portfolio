@@ -57,7 +57,7 @@ export default function FullProjects({ idioma, darkMode }: Project){
     stack3: 'Axios',
     stack4: 'TailwindCSS',
     stack5: '',
-    route: '#'
+    route: 'https://github.com/juancarlossa/todo-list'
   },
   {    
     title_es: 'PHP Crud',
@@ -75,7 +75,7 @@ export default function FullProjects({ idioma, darkMode }: Project){
     stack3: 'Apache',
     stack4: '',
     stack5: '',
-    route: '#'
+    route: 'https://github.com/juancarlossa/PHP-CRUD'
   },
   {
     title_es: 'Unity Minijuego',

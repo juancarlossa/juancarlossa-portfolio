@@ -5,7 +5,7 @@ import { useState } from 'react'
 import { I18nextProvider } from "react-i18next";
 
 export default function App({ Component, pageProps }: AppProps) {
-  const [idioma, setIdioma] = useState('es');
+  const [idioma, setIdioma] = useState('pl');
   const [darkMode, setDarkMode] = useState('dark');
 
   return (
