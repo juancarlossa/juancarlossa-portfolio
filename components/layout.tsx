@@ -1,8 +1,9 @@
 import Navbar from './Navbar'
 import { Footer } from './Footer'
-import { ReactNode } from 'react';
+import { ReactNode, useState } from 'react';
 import styles from '@/styles/Home.module.css'
 import Head from 'next/head';
+import Sidebar from './Sidebar'
 
 type LayoutProps = {
   children: ReactNode;
@@ -13,6 +14,11 @@ type LayoutProps = {
 }
 
 export default function Layout({ children, idioma, setIdioma, darkMode, setDarkMode }: LayoutProps) {
+  const [isOpen, setIsOpen] = useState(false)
+
+  const toggleSidebar = () => {
+    setIsOpen(!isOpen)
+  }
   return (
     <>
       <Head>
@@ -22,7 +28,8 @@ export default function Layout({ children, idioma, setIdioma, darkMode, setDarkM
         <link rel="icon" href="/favicon.ico" />
       </Head>
       
-      <Navbar idioma={idioma} setIdioma={setIdioma} darkMode={darkMode} setDarkMode={setDarkMode} />
+      <Navbar idioma={idioma} setIdioma={setIdioma} darkMode={darkMode} setDarkMode={setDarkMode} toggleSidebar={toggleSidebar} />
+      <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
       <main className={darkMode === "dark" ? styles["main-dark"] : styles["main-light"]}>
         <div className={styles.div}>
           {children}

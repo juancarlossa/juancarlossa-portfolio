@@ -14,15 +14,15 @@ const copy = <p className="text-sm font-bold">&copy; 2022 Juan. All rights reser
 export const Footer = ({ darkMode }:FooterProps) => {
   return (
     <footer className={darkMode === "dark" ? "bg-gray-800 text-gray-300" : "bg-stone-100 text-slate-700"}>
-      <div className="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:px-8 text-center gap-10 mt-4 md:mt-0 flex items-center justify-center mx-auto">
+      <div className="max-w-screen mx-auto py-12 text-center flex flex-row items-center justify-center">
         <Link href={'https://www.linkedin.com/in/juan-carlos-saugar-186a6a1a1'} target='_blank'>
-          <Image className="fill-slate-800" src="/social-media/linkedin1.svg" width={40} height={40} alt="Icon 1" />
+          <Image className="fill-slate-800 mx-2" src="/social-media/linkedin1.svg" width={40} height={40} alt="Icon 1" />
         </Link>
         <Link href={'https://github.com/juancarlossa'} target='_blank'>
-          <Image className="text-slate-700" src="/social-media/github1.svg" width={30} height={30} alt="Icon 1" />
+          <Image className="text-slate-700 mx-2" src="/social-media/github1.svg" width={30} height={30} alt="Icon 1" />
         </Link>
         <Link href={'mailto:juank987610@gmail.com'} target='_blank'>
-          <Image className="rounded" src="/social-media/email1.svg" width={30} height={30} alt="Icon 1" />
+          <Image className="rounded mx-2 ml-4" src="/social-media/email1.svg" width={30} height={30} alt="Icon 1" />
         </Link>
         <a href="#" className="text-gray-400 hover:text-gray-300">
         </a>

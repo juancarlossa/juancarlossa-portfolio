@@ -47,7 +47,7 @@ export default function Home({ idioma, darkMode } : LanguageProps) {
           idioma === 'en' ? 'I present to you some of my projects that I am creating in Unity. These are some of the jobs I have worked in the last year' : 
           'Tu przedstawiam kilka moich projektów, które tworzę w Unity. To niektóre z prac, które wykonywałem w ciągu ostatniego roku'}
       </p>
-      <div className='grid grid-cols-2 gap-4'>
+      <div className='grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-4'>
         <Image className="" src='/projects/unity.jpg' width={1920} height={1080} alt="Icon 1" />
         <Image className="" src='/projects/unity-multiplayer1.jpg' width={1920} height={1080} alt="Icon 1" />
       </div>

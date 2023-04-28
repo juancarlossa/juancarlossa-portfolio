@@ -101,7 +101,7 @@ export default function Skills() {
     
   ]
   return (
-    <div className='grid grid-cols-2 gap-5'>
+    <div className='grid grid-cols-1 lg:grid-cols-2 gap-5'>
       
       {skills.map((skill, index) => (
         <div key={index} className='border border-stone-500 w-92 px-5 py-5 rounded-md'>

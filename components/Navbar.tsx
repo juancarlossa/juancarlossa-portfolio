@@ -2,6 +2,8 @@ import Link from 'next/link'
 import { useState } from 'react'
 import Button from './Button'
 import { useRouter } from 'next/router'
+import { HiMenuAlt2 } from "react-icons/hi"
+
 
 const links = [{
   label: { 
@@ -31,9 +33,10 @@ type LanguageProps = {
   darkMode: string,
   setIdioma: React.Dispatch<React.SetStateAction<string>>;
   setDarkMode: React.Dispatch<React.SetStateAction<string>>;
+  toggleSidebar: () => void;
 }
 
-export default function Navbar ({ idioma, darkMode, setIdioma, setDarkMode } : LanguageProps) {
+export default function Navbar ({ idioma, darkMode, setIdioma, setDarkMode, toggleSidebar } : LanguageProps) {
   const router = useRouter();
 
   const cambiarIdioma = (nuevoIdioma: string) => {
@@ -63,9 +66,13 @@ export default function Navbar ({ idioma, darkMode, setIdioma, setDarkMode } : L
       <nav className={darkMode === "dark" ? 
       "flex justify-center pt-8 pb-5 bg-gray-800 transition duration-300" : 
       "flex justify-center pt-8 pb-5 bg-stone-100 transition duration-300"}>
+
+        <button type="button" className="toggle-btn" onClick={toggleSidebar}>
+          <HiMenuAlt2 />
+        </button>
         <div className="flex py-2 px-6">
           {links.map(({ label, route}) => (
-          <button key={route} className={darkMode==='dark' ? 'px-3' : 'px-3 text-black'}>
+          <button key={route} className={darkMode==='dark' ? 'px-3 nav-links' : 'px-3 text-black nav-links'}>
             <Button 
               target=''
               key={route} 

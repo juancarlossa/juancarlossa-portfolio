@@ -36,7 +36,7 @@ export default function Projects({ title, idioma, darkMode, icon, description} :
       <div className='flex flex-row py-5'>
         {<Title title= {title} icon={icon} />}
       </div>
-      <div className='grid grid-cols-2 gap-4'>
+      <div className='grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-4 '>
         {projects.map((project, index) => (
           <Project 
             darkMode={darkMode}

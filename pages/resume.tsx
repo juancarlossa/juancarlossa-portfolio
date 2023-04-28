@@ -45,8 +45,8 @@ export default function Resume({idioma, darkMode}: LanguageProps) {
   return (
     <>
       <Title title={idioma === 'es' ? content[0].title1_es : idioma === 'en' ? content[0].title1_en : content[0].title1_pl} icon={FaUser} />
-      <div className='flex items-center w-full'>
-        <div className='w-3/4 pr-10'>
+      <div className='lg:flex items-center w-full'>
+        <div className='w-full lg:w-3/4 pr-10'>
           <p >
             {idioma === 'es' ? content[1].description_es : idioma === 'en' ? content[1].description_en : content[1].description_pl}
           </p>
