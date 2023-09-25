@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import  Projects  from '@/components/Projects'
-import  Mode  from '@/components/Mode'
+import  NavMode  from '@/components/NavMode'
 import { GoProject } from 'react-icons/go';
 import Title from '@/components/Title'
 import {BsImages} from 'react-icons/bs';
