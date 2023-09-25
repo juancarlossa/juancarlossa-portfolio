@@ -3,9 +3,11 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import  Projects  from '@/components/Projects'
+import  Mode  from '@/components/Mode'
 import { GoProject } from 'react-icons/go';
 import Title from '@/components/Title'
 import {BsImages} from 'react-icons/bs';
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,6 +19,7 @@ type LanguageProps = {
 export default function Home({ idioma, darkMode } : LanguageProps) {
   return (
     <>
+    
       <h1 className={darkMode === 'dark' ? 
         'text-center pb-5 text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-emerald-500 font-extrabold text-2xl md:text-6xl' :
         'text-center pb-5 text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-blue-500 font-extrabold text-2xl md:text-6xl' }>

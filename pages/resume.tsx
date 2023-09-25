@@ -12,8 +12,9 @@ import { IoLogoJavascript } from 'react-icons/io';
 import { IoLogoHtml5 } from 'react-icons/io';
 import { AiOutlineApartment } from 'react-icons/ai';
 import { BsPersonLinesFill } from 'react-icons/bs';
-import Image from 'next/image';
+//import Image from 'next/image';
 import Skills from '@/components/Skills';
+import {Image} from "@nextui-org/image";
 
 type LanguageProps = {
   idioma: string;
@@ -60,6 +61,7 @@ export default function Resume({idioma, darkMode}: LanguageProps) {
         </div>
         <div className='m-auto'>
           <Image
+            isBlurred
             src='/headerImg.png'
             width={250}
             height={250}

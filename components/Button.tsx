@@ -7,13 +7,14 @@ type ButtonProps = {
   route: string;
   className: string;
   target: string;
+  index: number;
 }
 
-export default function Button({ label, route, className, target }: ButtonProps) {
+export default function Button({ index, label, route, className, target }: ButtonProps) {
 
   return (
     <>
-        <Link href={route} target={target} className={className}>
+        <Link tabIndex={index} href={route} target={target} className={className}>
           {label}
         </Link>
     </>
