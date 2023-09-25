@@ -15,7 +15,7 @@ const variants = {
   }
 }
 
-export default function Mode({children, darkMode, toggleDarkMode, className}: any) {
+export default function NavMode({children, darkMode, toggleDarkMode, className}: any) {
   return (
     <motion.div 
       initial='hidden'

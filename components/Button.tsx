@@ -7,7 +7,7 @@ type ButtonProps = {
   route: string;
   className: string;
   target: string;
-  index: number;
+  index?: number;
 }
 
 export default function Button({ index, label, route, className, target }: ButtonProps) {

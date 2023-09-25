@@ -14,7 +14,7 @@ type LanguageProps = {
 
 
 
-export default function LangButtons({ idioma, darkMode, setIdioma } : LanguageProps) {
+export default function NavLangButtons({ idioma, darkMode, setIdioma } : LanguageProps) {
   const cambiarIdioma = (nuevoIdioma: string) => {
     setIdioma(nuevoIdioma);
   }
