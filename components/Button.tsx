@@ -3,7 +3,7 @@ import { usePathname } from 'next/navigation';
 import { motion } from 'framer-motion';
 
 type ButtonProps = {
-  id: string;
+  id?: string;
   label: string;
   route: string;
   className: string;
