@@ -19,7 +19,6 @@ type LanguageProps = {
 export default function Home({ idioma, darkMode } : LanguageProps) {
   return (
     <>
-    
       <h1 className={darkMode === 'dark' ? 
         'text-center pb-5 text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-emerald-500 font-extrabold text-2xl md:text-6xl' :
         'text-center pb-5 text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-blue-500 font-extrabold text-2xl md:text-6xl' }>

@@ -3,8 +3,6 @@ import NavLangButtons from './NavLangButtons'
 import NavMode from './NavMode'
 import NavButtons from './NavButtons'
 
-
-
 export type ModeProps = {
   idioma: string,
   darkMode: string,
@@ -29,8 +27,8 @@ export default function Navbar ({ idioma, darkMode, setIdioma, setDarkMode, togg
   return (
     <header>
       <nav className={darkMode === "dark" ? 
-      "flex justify-center pt-8 pb-5 bg-gray-800 transition duration-300" : 
-      "flex justify-center pt-8 pb-5 bg-stone-100 transition duration-300"}>
+      "flex justify-center pt-8 pb-5 bg-gray-800" : 
+      "flex justify-center pt-8 pb-5 bg-stone-100"}>
 
         <button type="button" className="toggle-btn" onClick={toggleSidebar}>
           <HiMenuAlt2 />

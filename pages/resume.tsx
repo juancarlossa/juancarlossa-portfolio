@@ -14,7 +14,7 @@ import { AiOutlineApartment } from 'react-icons/ai';
 import { BsPersonLinesFill } from 'react-icons/bs';
 //import Image from 'next/image';
 import Skills from '@/components/Skills';
-import {Image} from "@nextui-org/image";
+import Image from 'next/image';
 
 type LanguageProps = {
   idioma: string;
@@ -61,7 +61,6 @@ export default function Resume({idioma, darkMode}: LanguageProps) {
         </div>
         <div className='m-auto'>
           <Image
-            isBlurred
             src='/headerImg.png'
             width={250}
             height={250}
