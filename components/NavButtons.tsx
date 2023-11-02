@@ -90,7 +90,6 @@ export default function NavButtons({ idioma, darkMode} :ModeProps) {
           }/>
       </motion.button>
       ))}
-
     </div>
   )
 }
@@ -104,7 +103,6 @@ export default function NavButtons({ idioma, darkMode} :ModeProps) {
     listItem.forEach((item) => {
       item.addEventListener("mouseenter", () => {
         const { left, top, width, height } = item.getBoundingClientRect()
-
         menuBackDrop.style.setProperty("--left", `${left}px`)
         menuBackDrop.style.setProperty("--top", `${top}px`)
         menuBackDrop.style.setProperty("--width", `${width}px`)
