@@ -21,7 +21,7 @@ export default function Counter() {
   }, []);
 
   function calculateTimeRemaining(): number {
-    const targetDate = new Date('2024-02-25T14:00:00').getTime();
+    const targetDate = new Date('2024-02-23T14:00:00').getTime();
     const now = new Date().getTime();
     return Math.max(targetDate - now, 0);
   }
